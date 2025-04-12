@@ -1,6 +1,11 @@
 {
     "categories": [
         {
+            "name": "entertainment",
+            "title": "Entertainment",
+            "video": "YjlgahImVwI"
+        },
+        {
             "name": "education",
             "title": "Education",
             "video": "zQGOcOUBi6s"
@@ -44,11 +49,6 @@
             "name": "people-blogs",
             "title": "People & Blogs",
             "video": "H-1HEyPr4Ew"
-        },
-        {
-            "name": "entertainment",
-            "title": "Entertainment",
-            "video": "YjlgahImVwI"
         },
         {
             "name": "news-politics",
