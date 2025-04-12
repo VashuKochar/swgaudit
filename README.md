@@ -22,7 +22,7 @@ This testing suite helps security teams evaluate their SWG implementation agains
 - Phishing attacks and credential theft
 - Malware downloads 
 - Data exfiltration via DNS tunneling
-- Productivity loss through cyber-slacking
+- Productivity loss through Cyber‑Slacking
 
 The Zero-Hour threat tests evaluate the SWG's ability to identify and block new, previously unknown threats without relying on traditional signature-based detection methods.
 
@@ -53,7 +53,7 @@ Tests DNS tunneling detection. Your SWG should:
 - Detect and block encoded DNS queries
 - Monitor and alert on suspicious DNS patterns
 
-### 4. Cyber-Slacking Test (cyberslacking.swgaudit.com)
+### 4. Cyber‑Slacking Test (cyberslacking.swgaudit.com)
 Tests content filtering capabilities. Your SWG should:
 - Allow access to the test interface
 - Selectively allow/block YouTube categories:

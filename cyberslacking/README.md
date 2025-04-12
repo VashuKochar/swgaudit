@@ -1,4 +1,4 @@
-# Cyber-Slacking Detection Test Module
+# Cyber‑Slacking Detection Test Module
 
 Tests SWG content filtering and acceptable use policy enforcement.
 

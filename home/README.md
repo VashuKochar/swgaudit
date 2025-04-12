@@ -23,7 +23,7 @@ The home page provides access to all test modules:
 1. Phishing Test
 2. Malware Test
 3. Data Theft Test
-4. Cyber-Slacking Test
+4. Cyber‑Slacking Test
 
 ## Usage
 
