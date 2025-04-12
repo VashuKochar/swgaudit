@@ -6,8 +6,8 @@
 	flex-direction: column;
 	font-size: clamp(1rem, 2vw, 1.3rem);
 	margin-top: 0;
-	padding-left: 150px;
-	padding-right: 150px;
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
 /* Simulation Links Section */
@@ -23,6 +23,8 @@
 .simulation-buttons .simulation-link {
 	display: inline-block;
 	padding: 1.5rem;
+	width: 100%;
+	max-width: 300px; /* Set a max width */
 	/* font-size: 1.5rem; */
 	color: #fff;
 	text-align: center;
