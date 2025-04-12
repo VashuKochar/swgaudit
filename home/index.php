@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="SWG Audit provides a comprehensive testing suite to evaluate Secure Web Gateway effectiveness against web threats.">
-    <meta name="keywords" content="SWG, Secure Web Gateway, Cybersecurity, Phishing, Malware, Data Theft, Cyber-Slacking">
+    <meta name="keywords" content="SWG, Secure Web Gateway, Cybersecurity, Phishing, Malware, Data Theft, Cyber‑Slacking">
     <meta name="author" content="SWG Audit">
 
 
@@ -31,10 +31,10 @@
         </div>
         
         <div class="simulation-buttons">
-            <a href="https://phishing.swgaudit.com" class="simulation-link">Simulate Phishing</a>
-            <a href="https://malware.swgaudit.com" class="simulation-link">Simulate Malware</a>
-            <a href="https://data-theft.swgaudit.com" class="simulation-link">Simulate Data Theft</a>
-            <a href="https://cyberslacking.swgaudit.com" class="simulation-link">Simulate Cyber-Slacking</a>
+            <a href="https://phishing.swgaudit.com/" class="simulation-link">Simulate Phishing</a>
+            <a href="https://malware.swgaudit.com/" class="simulation-link">Simulate Malware</a>
+            <a href="https://data-theft.swgaudit.com/" class="simulation-link">Simulate Data‑Theft</a>
+            <a href="https://cyberslacking.swgaudit.com/" class="simulation-link">Simulate Cyber‑Slacking</a>
         </div>
         <p class="note">Run SWG Audit to assess your gateway's resilience against today's most evasive web-based attacks.</p>
 
