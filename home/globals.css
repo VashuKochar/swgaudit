@@ -66,17 +66,22 @@ img {
 }
 
 h1 {
-    font-size: clamp(1.3rem, 5vw, 2.5rem);
+    font-size: clamp(1.3rem, 7vw, 2.5rem);
 }
 
 h2 {
-	font-size: clamp(1.2rem, 2vw, 1.75rem);
+	font-size: clamp(1.2rem, 5vw, 1.75rem);
     margin: 0;
 }
 
 h3 {
-	font-size: clamp(1.1rem, 1vw, 1.2rem);
+	font-size: clamp(1.1rem, 3vw, 1.2rem);
 	/* font-weight: bold; */
+}
+
+p {
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    
 }
 
 /* Update nav styling */
@@ -130,7 +135,7 @@ nav ul {
 
 nav ul li a {
 	text-decoration: none;
-	padding-block: 1rem;
+	padding: 1rem 1.5rem;
 	text-wrap: nowrap;
 	display: block;
 	color: black;
@@ -319,18 +324,7 @@ button:hover {
     nav ul li a {
         width: 100%;
         text-align: center;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.25rem;
-    }
-
-    h3 {
-        font-size: 1rem;
+        padding-inline: 0;
     }
 
     .hamburger {
