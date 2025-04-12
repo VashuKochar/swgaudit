@@ -1,24 +1,31 @@
+<?php
+    $title = "SWG Audit";
+    $description = "SWG Audit provides a comprehensive testing suite to evaluate Secure Web Gateway effectiveness against web threats.";
+    $keywords = "SWG, Secure Web Gateway, Cybersecurity, Phishing, Malware, Data Theft, Cyber‑Slacking";
+    $url = "https://swgaudit.com";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    
+    <title><?php echo $title ?></title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SWG Audit provides a comprehensive testing suite to evaluate Secure Web Gateway effectiveness against web threats.">
-    <meta name="keywords" content="SWG, Secure Web Gateway, Cybersecurity, Phishing, Malware, Data Theft, Cyber‑Slacking">
+    <meta name="description" content="<?php echo $description ?>" >
+    <meta name="keywords" content="<?php echo $keywords ?>" >
     <meta name="author" content="SWG Audit">
 
-
-    <meta property="og:title" content="SWG Audit - Comprehensive Testing Suite">
-    <meta property="og:description" content="Test your Secure Web Gateway against Zero-Hour Layer 7 attacks with SWG Audit.">
+    <meta property="og:title" content="<?php echo $title ?>" >
+    <meta property="og:description" content="<?php echo $description ?>" >
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://swgaudit.com">
-    <meta property="og:image" content="https://swgaudit.com/opengraph.png">
-    <meta property="og:image:alt" content="SWG Audit">
+    <meta property="og:url" content="<?php echo $url ?>" >
+    <meta property="og:image" content="<?php echo $url ?>/opengraph.png" >
     
     <link rel="icon" href="https://swgaudit.com/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="https://swgaudit.com/apple-touch-icon.png">
-
-    <title>SWG Audit</title>
+    
     <link rel="stylesheet" href="https://swgaudit.com/globals.css">
     <link rel="stylesheet" href="styles.css">
 </head>

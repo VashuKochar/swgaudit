@@ -1,19 +1,31 @@
+<?php
+    $title = "Phishing Test - SWG Audit";
+    $description = "Simulate phishing attacks to test your Secure Web Gateway's ability to prevent credential theft.";
+    $keywords = "SWG, Phishing Test, Credential Theft, Secure Web Gateway, Cybersecurity";
+    $url = "https://phishing.swgaudit.com";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    
+    <title><?php echo $title ?></title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Simulate phishing attacks to test your Secure Web Gateway's ability to prevent credential theft.">
-    <meta name="keywords" content="SWG, Phishing Test, Credential Theft, Secure Web Gateway, Cybersecurity">
+    <meta name="description" content="<?php echo $description ?>" >
+    <meta name="keywords" content="<?php echo $keywords ?>" >
     <meta name="author" content="SWG Audit">
-    <meta property="og:title" content="Phishing Audit - SWG Testing Suite">
-    <meta property="og:description" content="Evaluate your SWG's effectiveness against phishing attacks with our comprehensive testing tools.">
+
+    <meta property="og:title" content="<?php echo $title ?>" >
+    <meta property="og:description" content="<?php echo $description ?>" >
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://phishing.swgaudit.com">
+    <meta property="og:url" content="<?php echo $url ?>" >
+    <meta property="og:image" content="<?php echo $url ?>/opengraph.png" >
+    
     <link rel="icon" href="https://swgaudit.com/favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" href="https://swgaudit.com/apple-touch-icon.png">
-    <meta property="og:image" content="https://phishing.swgaudit.com/opengraph.png">
-    <title>Phishing Audit</title>
+    <link rel="apple-touch-icon" href="https://swgaudit.com/apple-touch-icon.png">
+    
     <link rel="stylesheet" href="https://swgaudit.com/globals.css">
     <link rel="stylesheet" href="styles.css">
 </head>
