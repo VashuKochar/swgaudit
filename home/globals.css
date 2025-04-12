@@ -1,0 +1,356 @@
+/* Control Variables */
+
+:root {
+	--color-1: #000;
+	--color-2: #fff;
+	--color-3: #ccc;
+	--color-4: #616161;
+	--color-5: #006699;
+
+	--gradient-1: linear-gradient(135deg, #ffffff, #f0f0f0, #e0e0e0);
+
+	--header-height: 6vh;
+    --footer-height: 6vh;
+	
+	--font-family: Arial, sans-serif;
+	--box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	
+	--text-color: var(--color-1);
+	--background-color: var(--gradient-1);
+	--nav-hover-bg-color: var(--color-1);
+	--nav-hover-text-color: var(--color-2);
+	--footer-text-color: var(--color-2);
+	--footer-background-color: var(--color-1);
+}
+
+/* Global Styling */
+body {
+	color: var(--text-color);
+	background: var(--background-color);
+	font-family: var(--font-family);
+	overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+	box-shadow: var(--box-shadow);
+	background-color: #f3f3f3;
+	width: 100%;
+}
+
+/* Main Styling */
+main {
+    flex-grow: 1;
+    text-align: center;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+/* Footer */
+footer {
+	color: var(--footer-text-color);
+	background-color: var(--footer-background-color);
+	text-align: center;
+	box-shadow: var(--box-shadow);
+	width: 100%;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+h1 {
+	font-size: clamp(1.75rem, 5vw, 2.5rem);
+}
+
+h2 {
+	font-size: clamp(1.2rem, 2vw, 1.75rem);
+    margin: 0;
+}
+
+h3 {
+	font-size: clamp(1.1rem, 1vw, 1.2rem);
+	/* font-weight: bold; */
+}
+
+/* Update nav styling */
+nav {
+    padding-inline: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-1);
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    right: 10px;
+    z-index: 1001;
+    background: none;
+    border: none;
+    width: auto;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background: var(--color-1);
+    transition: all 0.3s ease;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+nav ul li a {
+	text-decoration: none;
+	padding: 1rem 1.5rem;
+	text-wrap: nowrap;
+	display: block;
+	color: black;
+}
+
+nav ul li a:not(.active):hover {
+	background-color: var(--nav-hover-bg-color);
+	color: var(--nav-hover-text-color);
+}
+
+nav ul li a.active {
+	background-color: #fff;
+}
+
+/* Section Styling */
+section {
+	display: block;
+	height: var(--section-height);
+	scroll-snap-align: start none;
+	overflow: hidden;
+}
+
+/* Form Styles */
+form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.form-group{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+label {
+    text-align: right;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+input {
+    flex: 1;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+button {
+    background-color: var(--color-4);
+    color: var(--color-2);
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--color-1);
+}
+
+/* Change the button styles for buttons that are children of HTML element with failed class */
+.failed button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.failed button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 40%;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+    width: 80vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note {
+    font-size: 0.9em;
+    text-align: center;
+}
+
+/* Updated failure state styles */
+.failed {
+    background-color: #dc3545;
+    color: white;
+}
+
+.failure-container {
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        padding-inline: 0;
+        justify-content: flex-start;
+    }
+
+    nav ul {
+        display: none;
+        position: fixed;
+        top: 50px; /* Height of header */
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #f3f3f3;
+        padding: 20px 0;
+        box-shadow: var(--box-shadow);
+        z-index: 1000;
+        overflow-y: auto;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(8px, 5px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -5px);
+    }
+
+    nav {
+        padding-inline: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        width: 100%;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .nav-brand {
+        font-size: 1rem;
+        padding-left: 10px;
+    }
+
+    .hamburger {
+        margin-left: auto;
+    }
+
+    label {
+        margin-bottom: 4px;
+    }
+}
+
+/* Print styles */
+@media print {
+    header, footer {
+        display: none;
+    }
+}

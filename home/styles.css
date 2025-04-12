@@ -1,0 +1,43 @@
+/* Hero Section */
+.hero {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-size: clamp(1rem, 2vw, 1.3rem);
+	margin-top: 0;
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+/* Simulation Links Section */
+.simulation-buttons {
+	display: flex;
+	flex-direction: row; /* Change to row */
+	gap: 1rem;
+	justify-content: space-evenly; /* Center align the buttons */
+	width: 100%;
+	margin: 1.5rem;
+}
+
+.simulation-buttons .simulation-link {
+	display: inline-block;
+	padding: 1.5rem;
+	/* font-size: 1.5rem; */
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	background-color: var(--color-1);
+	transition: background-color 0.3s ease;
+}
+
+.simulation-buttons .simulation-link:hover {
+	background-color: var(--color-4);
+}
+
+@media (max-width: 768px) {
+	.simulation-buttons {
+		flex-direction: column; /* Change to column for smaller screens */
+		align-items: center; /* Center align the buttons vertically */
+	}
+}
