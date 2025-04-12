@@ -130,7 +130,7 @@ nav ul {
 
 nav ul li a {
 	text-decoration: none;
-	padding: 1rem 1.5rem;
+	padding-block: 1rem;
 	text-wrap: nowrap;
 	display: block;
 	color: black;
