@@ -34,7 +34,7 @@
     <main class="hero">
         <div>
             <h1>Is Your SWG Ready for Zero-Hour Layer 7 Attacks?</h1>
-            <p>With nearly 70% newly registered domains still uncategorized, traditional perimeter defenses, like Firewalls, UTMs and SWGs, based on URL filtering are rapidly becoming obsolete.</p>
+            <p>With nearly 70% newly registered domains still uncategorized, traditional perimeter defenses based on URL filtering are rapidly becoming obsolete.</p>
         </div>
         
         <div class="simulation-buttons">

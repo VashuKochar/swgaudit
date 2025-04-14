@@ -1,9 +1,7 @@
 .timer {
-    margin-top: 15px;
-    font-size: 0.9em;
+    font-size: clamp(0.9rem, 1vw, 1rem);
     font-style: italic;
     font-family: monospace;
-    text-shadow: none;
     text-align: center;
 }
 
@@ -12,6 +10,7 @@
     justify-content: center;
     gap: 10px;
     flex-direction: row;
+    width: 100%;
 }
 
 .upload-area {
@@ -70,9 +69,7 @@
 }
 
 .upload-text {
-    font-size: 1em;
     color: #333;
-    margin-bottom: 15px;
     text-shadow: none;
 }
 
@@ -178,12 +175,6 @@ button:hover {
     transition: transform 0.3s ease;
 }
 
-.uploading .upload-text,
-.uploading .constraints {
-    color: #4CAF50;
-    z-index: 1;
-}
-
 .uploading .upload-icon {
     fill: #4CAF50;
     z-index: 1;
@@ -230,11 +221,6 @@ button:hover {
     button#uploadButton {
         width: 100%;
         margin-top: 10px;
-    }
-
-    .constraints {
-        margin: 15px 0;
-        line-height: 1.4;
     }
 
     .results {

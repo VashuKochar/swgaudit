@@ -35,10 +35,8 @@
     <h1>Can Your SWG prevent credential theft?</h1>
     <div class="container">
         <form id="phishing-form" method="post">
-            <div>
-                <h2>Credential Harvesting Simulation</h2>
-                <p class="note">Submitted data is immediately discarded</p>
-            </div>
+            <h2>Credential Harvesting Simulation</h2>
+            <p class="note">Submitted data is immediately discarded</p>
             <div class="form-group">
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" placeholder="john.smith" required minlength="1">
