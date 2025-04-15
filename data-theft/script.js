@@ -219,7 +219,7 @@ async function handleFileUpload(file) {
                     clearInterval(countdownInterval);
                 }
                 countdownInterval = setInterval(() => {
-                    console.log('Timer update:', timeLeft);
+                    // console.log('Timer update:', timeLeft);
                     const minutes = Math.floor(timeLeft / 60);
                     const seconds = timeLeft % 60;
                     timerElement.textContent = `File will be deleted from the server in ${minutes}:${seconds.toString().padStart(2, '0')}`;
