@@ -33,7 +33,7 @@
     <?php include '../snippets/header.php' ?>
     <main class="hero">
         <div>
-            <h1>Is Your <span class="blue-text">SWG</span> Ready for Zero-Hour Layer 7 Attacks?</h1>
+            <h1>Is Your <span class="blue-text">SWG</span> Ready for Zero‑Hour Layer 7 Attacks?</h1>
             <p class="note">
                 Automated crawlers and human editors can no longer cope up with the website categorisation workload.<br>
                 With nearly 70% newly registered domains still uncategorized, URL filtering is rapidly becoming obsolete.

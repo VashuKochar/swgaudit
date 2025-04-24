@@ -1,33 +1,56 @@
 /* Control Variables */
 
 :root {
-	--color-1: #000;
-	--color-2: #fff;
-	--color-3: #ccc;
-	--color-4: #616161;
-	--color-5: #006699;
+	/* ---------- Base Colors ---------- */
+	--black: #000;
+	--white: #fff;
+	--gray-050: #fefefe;
+	--gray-100: #f0f0f0;
+	--gray-300: #e0e0e0;
+	--gray-600: #616161;
 
-	--gradient-1: linear-gradient(110deg, #FFF 1.04%, #F0F0F0 50.74%, #E0E0E0 98.96%);
+	/* ---------- Brand Palette ---------- */
+	--brand-primary: #006699;
 
+	/* ---------- Shadows ---------- */
+	--shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+	--shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+	/* ---------- Typography ---------- */
+	--font-mono: "JetBrains Mono","Consolas",monospace;
+
+	--fs-body: clamp(1rem, 2vw, 1.2rem);
+	--fs-h1: clamp(1.3rem, 7vw, 2.5rem);
+	--fs-h2: clamp(1.2rem, 5vw, 1.75rem);
+	--fs-h3: clamp(1.1rem, 3vw, 1.2rem);
+	--fs-p: clamp(0.9rem, 2vw, 1.1rem);
+	--fs-header: clamp(0.8rem, 2vw, 1rem);
+	--fs-nav-brand: clamp(1.2rem, 2vw, 1.5rem);
+
+	/* ---------- Layout ---------- */
 	--header-height: 6vh;
-    --footer-height: 6vh;
-	
-	--font-family: Arial, sans-serif;
-	--box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-	
-	--text-color: var(--color-1);
-	--background-color: var(--gradient-1);
-	--nav-hover-bg-color: var(--color-1);
-	--nav-hover-text-color: var(--color-2);
-	--footer-text-color: var(--color-3);
-	--footer-background-color: var(--color-1);
+	--footer-height: 6vh;
+	--content-padding-inline: 10%;
+
+	/* ---------- Gradients ---------- */
+	--gradient-body: linear-gradient(110deg, var(--white) 1.04%, var(--gray-100) 50.74%, var(--gray-300) 98.96%);
+
+	/* ---------- Semantic Tokens ---------- */
+	--text-color: var(--black);
+	--bg-color: var(--gradient-body);
+
+	--nav-hover-bg: var(--black);
+	--nav-hover-text: var(--white);
+
+	--footer-text: var(--gray-300);
+	--footer-bg: var(--black);
 }
 
 /* Global Styling */
 body {
 	color: var(--text-color);
-	background: var(--background-color);
-	font-family: var(--font-family);
+	background: var(--bg-color);
+	font-family: var(--font-mono);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -37,10 +60,10 @@ body {
     padding: 0;
 }
 
-/* Header Styling */
+/* Updated Header and Footer Styling */
 header, footer {
-	box-shadow: var(--box-shadow);
-	background-color: #f3f3f3;
+	box-shadow: var(--shadow-md);
+	background-color: var(--bg-color);
 }
 
 header {
@@ -59,8 +82,8 @@ main {
 footer{
     padding: 0.5rem;
     text-align: center;
-    color: var(--footer-text-color);
-	background-color: var(--footer-background-color);
+    color: var(--footer-text);
+	background-color: var(--footer-bg);
 }
 
 footer a {
@@ -69,24 +92,24 @@ footer a {
 }
 
 .banner {
-	color: var(--footer-text-color);
-	background-color: var(--footer-background-color);
+	color: var(--footer-text);
+	background-color: var(--footer-bg);
 	text-align: center;
-	box-shadow: var(--box-shadow);
+	box-shadow: var(--shadow-md);
     padding: 0.5rem;
 }
 
 h1 {
-    font-size: clamp(1.3rem, 7vw, 2.5rem);
+    font-size: clamp(1.3rem, 2.6vw, 2.2rem);
 }
 
 h2 {
-	font-size: clamp(1.2rem, 5vw, 1.75rem);
+	font-size: clamp(1.2rem, 2vw, 1.75rem);
     margin: 0;
 }
 
 h3 {
-	font-size: clamp(1.1rem, 3vw, 1.2rem);
+	font-size: clamp(1.1rem, 1.75vw, 1.2rem);
 	/* font-weight: bold; */
 }
 
@@ -100,16 +123,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.nav-brand {
-    font-size: clamp(1.2rem, 2vw, 1.5rem);
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--color-1);
-    padding: 0.5rem 1rem;
-    white-space: nowrap;
-    font-style: italic;
 }
 
 .hamburger {
@@ -129,7 +142,7 @@ nav {
     width: 25px;
     height: 3px;
     margin: 5px 0;
-    background: var(--color-1);
+    background: var(--black);
     transition: all 0.3s ease;
 }
 
@@ -157,8 +170,8 @@ nav ul li a {
 }
 
 nav ul li a:not(.active):hover {
-	background-color: var(--nav-hover-bg-color);
-	color: var(--nav-hover-text-color);
+	background-color: var(--nav-hover-bg);
+	color: var(--nav-hover-text);
 }
 
 nav ul li a.active {
@@ -194,7 +207,7 @@ form {
 label {
     text-align: right;
     margin-bottom: 0;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 input, button, select {
@@ -215,18 +228,18 @@ input:focus {
 }
 
 button {
-    background-color: var(--color-4);
-    color: var(--color-2);
+    background-color: var(--gray-600);
+    color: var(--white);
     border: none;
     padding: 12px 20px;
     cursor: pointer;
-    font-weight: bold;
+    /* font-weight: bold; */
     width: 100%;
     transition: all 0.3s ease;
 }
 
 button:hover {
-    background-color: var(--color-1);
+    background-color: var(--black);
 }
 
 /* Change the button styles for buttons that are children of HTML element with failed class */
@@ -243,7 +256,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     height: auto;
-    max-width: 500px;
+    max-width: 600px;
     margin: 30px auto;
     background-color: white;
     padding: clamp(1rem, 2vw, 1.5rem);
@@ -259,7 +272,7 @@ button:hover {
 }
 
 .blue-text {
-    color: var(--color-5);
+    color: var(--brand-primary);
 }
 
 /* Updated failure state styles */

@@ -4,7 +4,6 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	font-size: clamp(1rem, 2vw, 1.3rem);
 }
 
 /* Simulation Links Section */
@@ -27,12 +26,12 @@
 	color: #fff;
 	text-align: center;
 	text-decoration: none;
-	background-color: var(--color-1);
+	background-color: var(--black);
 	transition: background-color 0.3s ease;
 }
 
 .simulation-buttons .simulation-link:hover {
-	background-color: var(--color-4);
+	background-color: var(--gray-600);
 }
 
 @media (max-width: 768px) {
