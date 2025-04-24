@@ -24,7 +24,7 @@
     <meta property="og:image" content="<?php echo $url ?>/opengraph.png" >
     
     <link rel="icon" href="https://swgaudit.com/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="https://swgaudit.com/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="https://swgaudit.com/images/apple-touch-icon.png">
     
     <link rel="stylesheet" href="https://swgaudit.com/globals.css">
     <link rel="stylesheet" href="styles.css">
@@ -33,12 +33,9 @@
     <?php include '../snippets/header.php' ?>
     <main class="hero">
         <div>
-            <h1>Is Your SWG Ready for Zero-Hour Layer 7 Attacks?</h1>
+            <h1>Is Your <span class="blue-text">SWG</span> Ready for Zero-Hour Layer 7 Attacks?</h1>
             <p class="note">
-                Blocking uncategorised websites was a feasible solution until 2019.
-                Today, nearly half a million new domains are registered every day.
-                Automated crawlers and human editors can no longer cope up with the website categorisation workload.
-                Most newly registered domains used for legitimate CDNs, APIs, and micro-services, so blocking them will disrupt critical business operations.
+                Automated crawlers and human editors can no longer cope up with the website categorisation workload.<br>
                 With nearly 70% newly registered domains still uncategorized, URL filtering is rapidly becoming obsolete.
             </p>
         </div>
@@ -49,7 +46,6 @@
             <a href="https://data-theft.swgaudit.com/" class="simulation-link">Simulate Data‑Theft</a>
             <a href="https://cyberslacking.swgaudit.com/" class="simulation-link">Simulate Cyber‑Slacking</a>
         </div>
-        <p class="note"><strong>Run SWG Audit to assess your gateway's resilience against today's most evasive web-based attacks</strong></p>
 
     </main>
     <?php include '../snippets/footer.php' ?>

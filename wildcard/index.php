@@ -23,7 +23,7 @@
     <meta property="og:url" content="<?php echo $url ?>" >
     
     <link rel="icon" href="https://swgaudit.com/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="https://swgaudit.com/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="https://swgaudit.com/images/apple-touch-icon.png">
     
     <link rel="stylesheet" href="https://swgaudit.com/globals.css">
     <link rel="stylesheet" href="styles.css">

@@ -24,7 +24,7 @@
     <meta property="og:image" content="<?php echo $url ?>/opengraph.png" >
     
     <link rel="icon" href="https://swgaudit.com/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="https://swgaudit.com/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="https://swgaudit.com/images/apple-touch-icon.png">
     
     <link rel="stylesheet" href="https://swgaudit.com/globals.css">
     <link rel="stylesheet" href="styles.css">
@@ -32,15 +32,12 @@
 <body>
     <?php include '../snippets/header.php' ?>
     <main>
-        <h1>Can Your SWG prevent credential theft?</h1>
+        <h1>Can Your <span class="blue-text">SWG</span> prevent credential theft?</h1>
         <p class="note">
-            Since the birth of the internet, phishing has remained the leading initial access vector of most security incidents.
-            Now, with AI-powered deepfakes and automation, attackers can launch hyper-realistic deception campaigns at scale.
-            Typically, the victim is sent a phishing link via email, social media, or even poisoned search results.
-            When the victim opens the phishing site, the uncategorised Zero-Hour URL is allowed by the URL filter.
-            Once the target submits their credentials to the phishing website, the attacker harvests them for account takeover, resale, or deeper intrusions.
+            When the victim clicks the phishing link, the uncategorised Zero-Hour domain is allowed by the URL filter.<br>
+            The attacker harvests the submitted credentials, while the victim is redirected to a legitimate website.
         </p>
-        <h3>Your SWG must be able to prevent the credential submission to the uncategorised websites.</h3>
+        <h3>Your SWG must be able to prevent the credential submission to the uncategorised websites</h3>
     <div class="container">
         <form id="phishing-form" method="post">
             <h2>Credential Harvesting Simulation</h2>

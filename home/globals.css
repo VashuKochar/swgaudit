@@ -7,7 +7,7 @@
 	--color-4: #616161;
 	--color-5: #006699;
 
-	--gradient-1: linear-gradient(135deg, #ffffff, #f0f0f0, #e0e0e0);
+	--gradient-1: linear-gradient(110deg, #FFF 1.04%, #F0F0F0 50.74%, #E0E0E0 98.96%);
 
 	--header-height: 6vh;
     --footer-height: 6vh;
@@ -19,7 +19,7 @@
 	--background-color: var(--gradient-1);
 	--nav-hover-bg-color: var(--color-1);
 	--nav-hover-text-color: var(--color-2);
-	--footer-text-color: var(--color-2);
+	--footer-text-color: var(--color-3);
 	--footer-background-color: var(--color-1);
 }
 
@@ -38,9 +38,13 @@ body {
 }
 
 /* Header Styling */
-header {
+header, footer {
 	box-shadow: var(--box-shadow);
 	background-color: #f3f3f3;
+}
+
+header {
+    font-size: clamp(0.8rem, 2vw, 1rem);
 }
 
 /* Main Styling */
@@ -50,22 +54,26 @@ main {
     margin-top: 0;
 	padding-left: 10%;
 	padding-right: 10%;
-    /* display: flex;
-    flex-direction: column; */
 }
 
-/* Footer */
-footer {
+footer{
+    padding: 0.5rem;
+    text-align: center;
+    color: var(--footer-text-color);
+	background-color: var(--footer-background-color);
+}
+
+footer a {
+    color: inherit; /* Inherit the color from the parent element */
+    text-decoration: underline; /* Keep the underline */
+}
+
+.banner {
 	color: var(--footer-text-color);
 	background-color: var(--footer-background-color);
 	text-align: center;
 	box-shadow: var(--box-shadow);
-    padding-inline: 1rem;
-}
-
-img {
-	max-width: 100%;
-	max-height: 100%;
+    padding: 0.5rem;
 }
 
 h1 {
@@ -95,12 +103,13 @@ nav {
 }
 
 .nav-brand {
-    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
     font-weight: bold;
     text-decoration: none;
     color: var(--color-1);
     padding: 0.5rem 1rem;
     white-space: nowrap;
+    font-style: italic;
 }
 
 .hamburger {
@@ -141,6 +150,10 @@ nav ul li a {
 	text-wrap: nowrap;
 	display: block;
 	color: black;
+}
+
+.logo {
+    max-height: calc(clamp(0.8rem, 2vw, 1rem) + 2rem);
 }
 
 nav ul li a:not(.active):hover {
@@ -243,6 +256,10 @@ button:hover {
 
 .note {
     text-align: center;
+}
+
+.blue-text {
+    color: var(--color-5);
 }
 
 /* Updated failure state styles */

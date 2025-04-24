@@ -158,15 +158,13 @@ certbot --apache -d swgaudit.com -d *.swgaudit.com
 4. Document any bypass techniques that succeed
 5. Adjust SWG policies based on findings
 
+## Supporting the Project
+
+If you find this project useful, consider giving it a star on GitHub! Starring the repository helps others discover the project and shows your support for the work being done.
+
 ## Contributing
 
-We welcome contributions! Please:
-
-1. Fork the repository
-2. Create a feature branch
-3. Submit a pull request
-
-For bug reports or feature requests, please open an issue.
+We welcome contributions! Please see the [CONTRIBUTING.md](CONTRIBUTING.md) file for detailed guidelines on how to contribute to this project. Whether it's reporting issues, submitting code changes, writing documentation, or suggesting features, your help is greatly appreciated.
 
 ## Security
 

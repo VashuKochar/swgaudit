@@ -24,7 +24,7 @@
     <meta property="og:image" content="<?php echo $url ?>/opengraph.png" >
     
     <link rel="icon" href="https://swgaudit.com/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="https://swgaudit.com/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="https://swgaudit.com/images/apple-touch-icon.png">
     
     <link rel="stylesheet" href="https://swgaudit.com/globals.css">
     <link rel="stylesheet" href="styles.css">
@@ -32,12 +32,12 @@
 <body>
     <?php include '../snippets/header.php' ?>
     <main>
-    <h1>Can Your SWG curb Cyber‑Slacking on Web 2.0 Apps?</h1>
+    <h1>Can Your <span class="blue-text">SWG</span> curb Cyber‑Slacking on Web 2.0 Apps?</h1>
     <p class="note">
-        Balancing access and security in Web 2.0 applications is crucial for modern businesses, as inadequate controls can undermine workplace productivity.
-        While research teams rely on YouTube for learning, unrestricted access can lead to major distractions.
+        Inadequate Web 2.0 controls can undermine workplace productivity.<br>
+        While teams rely on YouTube for learning, unrestricted access can lead to major distractions.
     </p>
-    <h3>Your SWG must be able to limit YouTube to work-related content, and prevent unproductive engagement.</h3>
+    <h3>Your SWG must be able to limit YouTube to work-related content, and prevent unproductive engagement</h3>
     <div class="container">
         <form id="cyberslacking-form">
             <h2>Video Content Category Simulation</h2>

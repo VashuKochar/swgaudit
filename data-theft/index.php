@@ -24,7 +24,7 @@
     <meta property="og:image" content="<?php echo $url ?>/opengraph.png" >
     
     <link rel="icon" href="https://swgaudit.com/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="https://swgaudit.com/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="https://swgaudit.com/images/apple-touch-icon.png">
     
     <link rel="stylesheet" href="https://swgaudit.com/globals.css">
     <link rel="stylesheet" href="styles.css">
@@ -32,14 +32,12 @@
 <body>
     <?php include '../snippets/header.php' ?>
     <main>
-    <h1>Can Your SWG stop Data Exfiltration?</h1>
+    <h1>Can Your <span class="blue-text">SWG</span> stop Data Exfiltration?</h1>
     <p class="note">
-        DNS traffic is implicitly trusted and rarely inspected at a granular level, it becomes the most effective channel for stealthy data exfiltration — undetected, unlogged, and uninterrupted.
-        Typically, confidential data is encoded, splits it into small chunks and sent as DNS queries to the attacker's name server.
-        The DNS traffic bypasses firewall security controls, since DNS requests are typically considered safe and aren't deeply inspected.
-        On the other end, the attacker's name server decodes and reassembles the stolen data.
+        In a typical DNS Tunneling attack, an attacker encodes sensitive data in subdomains of DNS queries.<br>
+        When the DNS quersies reach the attacker's name server, stolen data is decoded and reassembled.
     </p>
-    <h3>Your SWG must be able to detect and limit DNS Tunneling, while ensuring a threshold for business traffic.</h3>
+    <h3>Your SWG must be able to detect and limit DNS Tunneling, while ensuring a threshold for business traffic</h3>
     <div class="container">
         <form id="data-theft-form" method="post">
             <h2>Unauthorised File Upload Simulation</h2>
