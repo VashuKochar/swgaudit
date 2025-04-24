@@ -5,17 +5,14 @@
 	justify-content: center;
 	flex-direction: column;
 	font-size: clamp(1rem, 2vw, 1.3rem);
-	margin-top: 0;
-	padding-left: 10%;
-	padding-right: 10%;
 }
 
 /* Simulation Links Section */
 .simulation-buttons {
 	display: flex;
-	flex-direction: row; /* Change to row */
+	flex-direction: row;
 	gap: 1rem;
-	justify-content: space-evenly; /* Center align the buttons */
+	justify-content: space-evenly;
 	width: 100%;
 	margin: 1.5rem;
 }

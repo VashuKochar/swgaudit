@@ -5,7 +5,7 @@
     text-align: center;
 }
 
-.button-container{
+.button-container {
     display: flex;
     justify-content: center;
     gap: 10px;

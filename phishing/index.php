@@ -32,7 +32,15 @@
 <body>
     <?php include '../snippets/header.php' ?>
     <main>
-    <h1>Can Your SWG prevent credential theft?</h1>
+        <h1>Can Your SWG prevent credential theft?</h1>
+        <p class="note">
+            Since the birth of the internet, phishing has remained the leading initial access vector of most security incidents.
+            Now, with AI-powered deepfakes and automation, attackers can launch hyper-realistic deception campaigns at scale.
+            Typically, the victim is sent a phishing link via email, social media, or even poisoned search results.
+            When the victim opens the phishing site, the uncategorised Zero-Hour URL is allowed by the URL filter.
+            Once the target submits their credentials to the phishing website, the attacker harvests them for account takeover, resale, or deeper intrusions.
+        </p>
+        <h3>Your SWG must be able to prevent the credential submission to the uncategorised websites.</h3>
     <div class="container">
         <form id="phishing-form" method="post">
             <h2>Credential Harvesting Simulation</h2>

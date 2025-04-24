@@ -33,19 +33,21 @@
     <?php include '../snippets/header.php' ?>
     <main>
     <h1>Can Your SWG curb Cyber‑Slacking on Web 2.0 Apps?</h1>
+    <p class="note">
+        Balancing access and security in Web 2.0 applications is crucial for modern businesses, as inadequate controls can undermine workplace productivity.
+        While research teams rely on YouTube for learning, unrestricted access can lead to major distractions.
+    </p>
+    <h3>Your SWG must be able to limit YouTube to work-related content, and prevent unproductive engagement.</h3>
     <div class="container">
         <form id="cyberslacking-form">
             <h2>Video Content Category Simulation</h2>
-            <div class="form-group">
-                <label for="category-select">Select YouTube Category</label>
-                <select id="category-select" class="category-select">
-                    <!-- Options will be generated here -->
-                </select>
-            </div>
+            <select id="category-select" class="category-select">
+                <!-- Options will be generated here -->
+            </select>
             <div class="video-container">
                 <iframe id="youtube-frame" 
-                        width="760" 
-                        height="415" 
+                        width="720" 
+                        height="400" 
                         src=""
                         title="YouTube video player" 
                         frameborder="0" 

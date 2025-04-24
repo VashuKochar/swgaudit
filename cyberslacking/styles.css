@@ -3,10 +3,11 @@
     width: 100%;
     max-width: 760px;
     margin: 0 auto;
+    max-height: 400px;
 }
 
 #youtube-frame {
-    width: 100%;
+    width: 88%;
     aspect-ratio: 16/9;
     height: auto;
     max-height: calc(100vh - 250px);
@@ -14,80 +15,16 @@
     border: none;
 }
 
-.category-select-container {
-    width: 100%;
-    max-width: 600px;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    gap: 16px;
-}
-
-.category-select-container label {
-    white-space: nowrap;
-    margin-bottom: 0;
-    font-weight: 500;
-    color: #333;
-}
-
 .category-select {
-    flex: 1;
-    width: 100%;
-    padding: 12px;
+    width: 90%;
+    padding: 3%;
+    margin: 3%;
     border: 1px solid #ddd;
     border-radius: 4px;
-    font-size: 1rem;
     background-color: white;
 }
 
 .category-select:focus {
     outline: none;
     border-color: #666;
-}
-
-@media screen and (max-width: 768px) {
-    .video-container {
-        max-width: 100%;
-        padding: 0 10px;
-    }
-
-    .category-select-container {
-        max-width: 100%;
-        padding: 0 10px;
-        gap: 8px;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .category-select {
-        width: 100%;
-    }
-
-    #video-category-title {
-        font-size: 1.2rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .container {
-        padding: 0 10px;
-    }
-
-    .tabs-container {
-        flex-direction: column;
-    }
-
-    .category-select-container {
-        max-width: 100%;
-        padding: 0 10px;
-        gap: 4px;
-    }
-
-    #youtube-frame {
-        height: 200px;
-    }
-
-    #video-category-title {
-        font-size: 1.2rem;
-    }
 }

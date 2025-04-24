@@ -34,7 +34,13 @@
     <main class="hero">
         <div>
             <h1>Is Your SWG Ready for Zero-Hour Layer 7 Attacks?</h1>
-            <p>With nearly 70% newly registered domains still uncategorized, traditional perimeter defenses based on URL filtering are rapidly becoming obsolete.</p>
+            <p class="note">
+                Blocking uncategorised websites was a feasible solution until 2019.
+                Today, nearly half a million new domains are registered every day.
+                Automated crawlers and human editors can no longer cope up with the website categorisation workload.
+                Most newly registered domains used for legitimate CDNs, APIs, and micro-services, so blocking them will disrupt critical business operations.
+                With nearly 70% newly registered domains still uncategorized, URL filtering is rapidly becoming obsolete.
+            </p>
         </div>
         
         <div class="simulation-buttons">
@@ -43,7 +49,7 @@
             <a href="https://data-theft.swgaudit.com/" class="simulation-link">Simulate Data‑Theft</a>
             <a href="https://cyberslacking.swgaudit.com/" class="simulation-link">Simulate Cyber‑Slacking</a>
         </div>
-        <p class="note">Run SWG Audit to assess your gateway's resilience against today's most evasive web-based attacks.</p>
+        <p class="note"><strong>Run SWG Audit to assess your gateway's resilience against today's most evasive web-based attacks</strong></p>
 
     </main>
     <?php include '../snippets/footer.php' ?>
