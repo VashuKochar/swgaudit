@@ -17,13 +17,13 @@
 	--shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
 
 	/* ---------- Typography ---------- */
-	--font-mono: "JetBrains Mono","Consolas",monospace;
+	--font-mono: 'Menlo', 'Monaco', 'Lucida Console', "JetBrains Mono","Consolas",monospace;
 
-	--fs-body: clamp(1rem, 2vw, 1.2rem);
-	--fs-h1: clamp(1.3rem, 7vw, 2.5rem);
-	--fs-h2: clamp(1.2rem, 5vw, 1.75rem);
-	--fs-h3: clamp(1.1rem, 3vw, 1.2rem);
-	--fs-p: clamp(0.9rem, 2vw, 1.1rem);
+	--fs-h1: clamp(1.3rem, 5vw, 2.3rem);
+	--fs-h2: clamp(1.2rem, 3vw, 1.75rem);
+	--fs-h3: clamp(1.1rem, 1.2vw, 1.5rem);
+	--fs-body: clamp(0.9rem, 1vw, 1.1rem);
+	--fs-p: clamp(0.9rem, 1vw, 1.1rem);
 	--fs-header: clamp(0.8rem, 2vw, 1rem);
 	--fs-nav-brand: clamp(1.2rem, 2vw, 1.5rem);
 
@@ -46,15 +46,18 @@
 	--footer-bg: var(--black);
 }
 
+* {
+    font-family: var(--font-mono);
+}
+
 /* Global Styling */
 body {
 	color: var(--text-color);
 	background: var(--bg-color);
-	font-family: var(--font-mono);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-size: var(--fs-body);
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -100,16 +103,16 @@ footer a {
 }
 
 h1 {
-    font-size: clamp(1.3rem, 2.6vw, 2.2rem);
+    font-size: var(--fs-h1)
 }
 
 h2 {
-	font-size: clamp(1.2rem, 2vw, 1.75rem);
+	font-size: var(--fs-h2);
     margin: 0;
 }
 
 h3 {
-	font-size: clamp(1.1rem, 1.75vw, 1.2rem);
+	font-size: var(--fs-h3);
 	/* font-weight: bold; */
 }
 
@@ -257,9 +260,9 @@ button:hover {
     flex-direction: column;
     height: auto;
     max-width: 600px;
-    margin: 30px auto;
+    margin: 3vh auto;
     background-color: white;
-    padding: clamp(1rem, 2vw, 1.5rem);
+    padding: clamp(1rem, 2%, 1.5rem);
     border-radius: 4px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     transition: background-color 0.3s ease;

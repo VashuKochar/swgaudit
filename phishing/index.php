@@ -37,35 +37,36 @@
             When the victim clicks the phishing link, the uncategorised Zero-Hour domain is allowed by the URL filter.<br>
             The attacker harvests the submitted credentials, while the victim is redirected to a legitimate website.
         </p>
-        <h3>Your SWG must be able to prevent the credential submission to the uncategorised websites</h3>
-    <div class="container">
-        <form id="phishing-form" method="post">
-            <h2>Credential Harvesting Simulation</h2>
-            <p class="note">Submitted data is immediately discarded</p>
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" placeholder="john.smith" required minlength="1">
+        <div class="container">
+            <form id="phishing-form" method="post">
+                <h2>Credential Harvesting Simulation</h2>
+                <p class="note">Submitted data is immediately discarded</p>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="john.smith" required minlength="1">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="MyP@ssw0rd123" required minlength="1">
+                </div>
+                <button type="submit" id="submit-button">Submit Credentials</button>
+            </form>
+            <div class="failure-container hidden" id="failure-container">
+                <h2>SWG FAILED</h2>
+                <p class="note">Server received your credentials</p>
+                <div class="form-group">
+                    <label>Username</label>
+                    <div class="credential-value" id="failed-username"></div>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <div class="credential-value" id="failed-password"></div>
+                </div>
+                <button type="button" id="reset-button">Reset Test</button>
             </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="MyP@ssw0rd123" required minlength="1">
-            </div>
-            <button type="submit" id="submit-button">Submit Credentials</button>
-        </form>
-        <div class="failure-container hidden" id="failure-container">
-            <h2>SWG FAILED</h2>
-            <p class="note">Server received your credentials</p>
-            <div class="form-group">
-                <label>Username</label>
-                <div class="credential-value" id="failed-username"></div>
-            </div>
-            <div class="form-group">
-                <label>Password</label>
-                <div class="credential-value" id="failed-password"></div>
-            </div>
-            <button type="button" id="reset-button">Reset Test</button>
         </div>
-    </div>
+        <h3>Your SWG must be able to prevent the credential submission to the uncategorised websites</h3>
+
     </main>
     <?php include '../snippets/footer.php' ?>
     <script src="https://swgaudit.com/global.js"></script>

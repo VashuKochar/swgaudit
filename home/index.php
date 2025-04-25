@@ -1,7 +1,7 @@
 <?php
     $title = "SWG Audit";
-    $description = "SWG Audit provides a comprehensive testing suite to evaluate Secure Web Gateway effectiveness against web threats.";
-    $keywords = "SWG, Secure Web Gateway, Cybersecurity, Phishing, Malware, Data Theft, Cyber‑Slacking";
+    $description = "Evaluate your perimeter security effectiveness against Zero-Day web threats.";
+    $keywords = "Perimeter Security, Network Security, Enterprise Web Security, Security Test, UTM, Firewall, SWG, Secure Web Gateway, Layer 7, Cybersecurity, Phishing, Malware, Data Theft, Cyber‑Slacking, DNS Tunneling, URL Filtering, Web Filtering, Threat Intelligence, Threat Detection, Threat Prevention, Zero-Day Exploit, Zero-Day Attack";
     $url = "https://swgaudit.com";
 ?>
 
@@ -46,6 +46,8 @@
             <a href="https://data-theft.swgaudit.com/" class="simulation-link">Simulate Data‑Theft</a>
             <a href="https://cyberslacking.swgaudit.com/" class="simulation-link">Simulate Cyber‑Slacking</a>
         </div>
+
+        <h3>Your SWG must be able to defend against Layer 7 attacks, without blocking uncategorised websites</h3>
 
     </main>
     <?php include '../snippets/footer.php' ?>

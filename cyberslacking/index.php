@@ -37,7 +37,6 @@
         Inadequate Web 2.0 controls can undermine workplace productivity.<br>
         While teams rely on YouTube for learning, unrestricted access can lead to major distractions.
     </p>
-    <h3>Your SWG must be able to limit YouTube to work-related content, and prevent unproductive engagement</h3>
     <div class="container">
         <form id="cyberslacking-form">
             <h2>Video Content Category Simulation</h2>
@@ -57,6 +56,8 @@
             </div>
         </form>
     </div>
+    <h3>Your SWG must be able to limit YouTube to work-related content, and prevent unproductive engagement</h3>
+
     </main>
     <?php include '../snippets/footer.php' ?>
     <script src="https://swgaudit.com/global.js"></script>

@@ -37,7 +37,6 @@
         In a typical DNS Tunneling attack, an attacker encodes sensitive data in subdomains of DNS queries.<br>
         When the DNS quersies reach the attacker's name server, stolen data is decoded and reassembled.
     </p>
-    <h3>Your SWG must be able to detect and limit DNS Tunneling, while ensuring a threshold for business traffic</h3>
     <div class="container">
         <form id="data-theft-form" method="post">
             <h2>Unauthorised File Upload Simulation</h2>
@@ -67,6 +66,8 @@
         </div>
         <p id="timer" class="timer">File will be deleted from the server in 10 minutes</p>
     </div>
+    <h3>Your SWG must be able to detect and limit DNS Tunneling, while ensuring a threshold for business traffic</h3>
+
     </main>
     <?php include '../snippets/footer.php' ?>
     <script src="https://swgaudit.com/global.js"></script>
